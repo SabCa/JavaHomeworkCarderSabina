@@ -30,16 +30,15 @@ public class Cnp {
         else 
         {
             String regex;
-            regex= "[1-2](0[1-9]|1[0-2]{2})(0[1-9]|1[0-9]|2[0-9]|3[0-1]{2})(19[0-99]|200[0-9]|201[0-7])(\\d{4})";
+            regex= "[1-2](0[1-9]|1[0-2]{2})(0[1-9]|1[0-9]|2[0-9]|3[0-1])(19[0-99]|200[0-9]|201[0-7])(\\d{4})";
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(regex);
             boolean found = false;
-            String result = null;
             while (matcher.find())
-            {
-                //System.out.println(result);           
-                System.out.println("I found a correct CNP");
+            {  
                 found = true;
+                System.out.println("I found a correct CNP");
+              
             } 
         }
        
