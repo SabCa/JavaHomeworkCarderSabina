@@ -9,6 +9,10 @@ package homework4;
 * @author gheorgheaurelpacurar
 */
 public class Car implements Saleable, Rentable{
+
+    Car(String mercedes, short mercedesSpeed, Color color, int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 /**
 @enum enumeration of accepted car colors
 */
@@ -81,19 +85,23 @@ Abstract method defined in Saleable interface implemented by class car
 */
 @Override
 public int getSalePrice(){
-return(12000);
+        int salePrice = 0;
+    return salePrice;
 }
-/**
-Abstract method defined in Rentable interface implemented by class car
-* is implemented here.
-* @override Rentable.getDailyRentPrice() method
-*/
+
+@Override
+public void setSalePrice(int price){
+        int salePrice = price;
+}
+
 @Override
 public int getDailyRentPrice(){
-return(250);
+        int rentPrice = 0;
+    return rentPrice;
+}
+
+@Override
+public void setDailyRentPrice(int rent){
+        int rentPrice = rent;
 }
 }
-
-
-
-
